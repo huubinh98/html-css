@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #EE4D2D;
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color: #dbdbdb;
+
+    --header-height:120px;
+    --navbar-height:38px;
+    --header__top-width-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+s
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-form));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* .modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+
+.modal__body {
+    --growth-form: 0.7;
+    --growth-to: 1;
+    /* margin: auto; */
+    animation: growth linear 0.1s;
+    /* position: relative;
+    z-index: 1; */
+}
+
+.mr-8 {
+    margin-right: 5px;
+    font-size: 1.5rem;
+    justify-items: center;
+}

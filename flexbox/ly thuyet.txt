@@ -1,0 +1,12 @@
+display : flex | inline-flex
+flex-direction : row | column sử dụng display flex mặc định flex-direction là row nằm ngang, sử dụng column để thành hàng dọc.
+flex-wrap : nowrap | wrap | wrap-reverse : nowrap là k cho xuống dòng, wrap là xuống dòng, wrap-reserse là nhảy lên trên.
+flex-basis: <length> set kích thước cho main size
+justify-content: flex-start | flex-end | center | space-between | space-around : căn flex-item theo trục chính main asix(thằng cha)
+justify-self: flex-start | flex-end |center dùng để xet cho thằng con flex-item
+align-content: flex-start | flex-end |center cùng hướng với trục cross-asix xet cho thằng cha
+align-self: flex-start | flex-end |center cùng hướng với trục cross-asix xet cho thằng con item
+flex-grow: <number> thay đổi kích thước item
+flex-shrink: <number> ...
+flex: <number> cú pháp viết ngắn cho cả 3 flex-basis, flex-grow, flex-shrink
+order: <number>
