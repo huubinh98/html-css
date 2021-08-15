@@ -1,0 +1,6 @@
+FlexBox:
+	- Display: + flex | inline-flex
+	- flex-diretion : + row: main axis nằm ngang
+			  + column nằm dọc
+	- flex-wrap
+	- flex-basis

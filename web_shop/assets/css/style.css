@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết
+ */
+
+/* 
+1. Vị trí
+2. Kích thước(width, height)
+3. Màu sắc
+4. Kiểu dáng
+ */
+
+ /* camon */
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full {
+    width: 100%
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text__white {
+    color: #fff !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.btn {
+    color: #fff;
+    margin-top: 15px;
+    padding: 11px 18px;
+    border-radius: 3px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.btn:hover {
+    color: #000;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+/* main */
+#main {
+
+}
+/* ---------------header---------- */
+#header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: rgba(17, 139, 143, 0.6);
+}
+
+#header .header__nav {
+    display: inline-block
+}
+
+#header .header__nav li {
+    position: relative;
+    display: inline-block;
+}
+
+#header .header__nav a {
+    font-size: 15px;
+    display: block;
+    padding: 0 15px;
+    line-height: 50px;
+    color: #6d1313;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header .header__nav li a:hover,
+#header .header__subnav li:hover a {
+    color: #fff;
+    background-color: tan;
+}
+
+#header .header__subnav {
+    left: 50%;
+    top: 100%;
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(17, 139, 143, 0.6);
+}
+
+#header .header__subnav li {
+    min-width: 200px;
+    line-height: 40px;
+
+}
+
+#header .header__nav li:hover .header__subnav {
+    display: block;
+}
+
+.header__search {
+    line-height: 50px;
+    float: right;
+    margin-right: 20px;
+}
+
+.search__text {
+    min-width: 200px;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+    line-height: 30px;
+    border-radius: 2px;
+    border: none;
+}
+
+.search__btn {
+    width: 50px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    background-color: tomato;
+}
+
+.search__btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.search__icon {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* ---------------Slider---------------- */
+
+#slider {
+    margin-top: 50px;
+    padding-top: 50%;
+    position: relative;
+    background: url(/assets/img/slider/Ambitious\ Shop.png) top center / cover no-repeat;
+    /* background: url(https://euroofficials.com/wp-content/uploads/2021/04/doi-tuyen-bong-da-hungary-giai-euro-2020-2021.jpg) top center / cover no-repeat ; */
+}
+
+#slider .text__content {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    margin-bottom: 10%;
+    color: rgb(17, 139, 143)
+}
+#slider .text__heading {
+    margin: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'themify';
+}
+
+#slider .text__description {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+/* ---------------Content---------------- */
+
+#content {
+    background-color: rgba(17, 139, 143, 0.2)
+}
+
+#content .section__content {
+    max-width: 800px;
+    padding: 64px 0 97px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section__heading {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #c20909;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#content .section__desc {
+    opacity: 0.6;
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ------------Content about------------ */
+#content .section__about {
+    margin: 15px 0;
+    line-height: 1.6;
+    text-align: justify;
+    
+}
+
+#content .about__img,
+#content .about__img .aboutshoe__img {
+    width: 100%;
+}
+/* ---------Content Shoe------------ */
+#content .shoe__list {
+    width: 100%;
+    text-align: center;
+
+}
+
+#content .shoe__item {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    width: calc(100% / 4 - 10px);
+}
+
+#content .shoe__item:hover {
+    cursor: pointer;
+    padding: 0px;
+    background-color: rgba(17, 139, 143, 0.2);
+}
+
+#content .shoe__img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#content .shoe__name {
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgb(228, 59, 59);
+}
+
+/* ------------Content tour--------------- */
+
+.tour__section {
+    background-color: #000;
+}
+
+
+.titket__list {
+    color: #fff;
+    list-style-type: none;
+    background-color: rgba(183, 241, 243, 0.5);
+}
+
+.titket__item {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.titket__list .sold__out {
+    padding: 3px 7px;
+    margin-left: 16px;
+    background-color: #f44336;
+}
+
+.titket__list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    margin-top: -2px;
+    line-height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #000;
+}
+
+
+/* -------------Places-------------- */
+
+.place__list {
+    margin-top: 32px;
+}
+
+.place__img {
+    display: block;
+    width: 100%;
+}
+
+.place__img:hover {
+    opacity: 0.8;
+}
+
+.place__body {
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.place__heading {
+    font-size: 15px;
+}
+
+.place__time {
+    color: #757575;
+    margin-top: 15px;
+}
+
+.place__description {
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+/* contact form */
+
+.contact__content {
+    padding: 32px 0;
+}
+
+.contact__info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact__info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact__form {
+    font-size: 15px;
+}
+
+.form__control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.map__section img {
+    width: 100%;
+}
+
+#footer {
+ text-align: center;
+ padding: 64px 16px;
+}
+
+.socical__list {
+    font-size: 24px;
+
+}
+
+.socical__list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.socical__list a:hover,
+.coppy__right a:hover {
+    opacity: 0.6;
+}
+
+.coppy__right {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.coppy__right a {
+    color: rgba(0, 0, 0, 0.4);
+}
