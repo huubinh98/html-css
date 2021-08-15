@@ -71,7 +71,7 @@ html {
     float: right;
  }
 
- .subnav__pseudo::after {
+ /* .subnav__pseudo::after {
     content: "";
     position: absolute;
     right: -3px;
@@ -79,7 +79,18 @@ html {
     border-width: 6px 4px;
     border-style: solid;
     border-color: transparent transparent transparent #9a9a9a;
- }
+ } */
+
+ .subnav__pseudo::after {
+    content: "";
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 6px 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #9a9a9a;
+}
 
  .text__desc {
     font-size: 1.4rem;

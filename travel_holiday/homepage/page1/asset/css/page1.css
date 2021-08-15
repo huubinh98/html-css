@@ -1,0 +1,134 @@
+.main {
+
+}
+
+.header {
+    height: var(--navbar-height);
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header__logo {
+    padding: 0 24px 0 34px;
+    margin-top: -8px;
+}
+
+
+.header__logo-img {
+    height: 37px;
+    width: 160px;
+}
+
+.navbar {
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    position: relative;
+}
+
+.navbar__item {
+
+}
+
+.navbar__item-link {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-family: 'poppins';
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 25px 19px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.navbar__item-link-btn {
+    background-color: #f76570;
+    margin-left: 23px;
+    background-clip: padding-box;
+    padding: 11px 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 25px;
+}
+
+.navbar__item:hover>.subnav__list,
+.subnav__item:hover> .subnav__list {
+    display: block;
+}
+
+.subnav__list {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 190px;
+    display: none;
+}
+
+.subnav__list.subnav--menu {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 24px);
+}
+
+.subnav__item {
+    position: relative;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.subnav__item:hover {
+    background-color: #f9f9f9;
+}
+
+.subnav__item-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Poppins';
+    display: block;
+    padding: 16px 26px;
+}
+
+.subnav__pseudo::after {
+    content: "";
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 6px 4px;
+    border-style: solid;
+    border-color: transparent transparent transparent #9a9a9a;
+}
+
+.subnav--menu::after {
+    content: "";
+    height: 47px;
+    width: 24px;
+    position: absolute;
+    top: 0;
+    left: -24px;
+    background-color: transparent;
+    cursor: default;
+}
+
+.header__bars {
+    margin-left: auto;
+}
+
+.header__bars-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.slider {
+    padding-top: 54%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
