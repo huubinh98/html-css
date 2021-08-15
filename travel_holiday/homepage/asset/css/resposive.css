@@ -18,17 +18,30 @@
     background-color: var(--white-color);
     /* display: none; */
     opacity: 0;
-	visibility: hidden;
+	  visibility: hidden;
 	/* top: 150%; */
-	transition: all 0.5s ease-in-out;
+	  transition: all 0.5s ease-in-out;
     /* animation: fadeIn ease-in-out 0.5s; */
   }
 
+  /* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transition: none;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s ease-in-out;
+    }
+} */
+
   .subnav__item {
     position: relative;
-   padding: 16px 26px;
-   border-bottom: 1px solid #f3f3f3;
-}
+    padding: 16px 26px;
+    border-bottom: 1px solid #f3f3f3;
+  }
 
   .subnav__item:hover {
     cursor: pointer;
@@ -43,9 +56,9 @@
 	/* top: 100%; */
   }
 
-  .slider__wrap {
+  /* .slider__wrap {
     background-size: cover;
-  }
+  } */
 }
 
 /* Mobile & Tablet */
